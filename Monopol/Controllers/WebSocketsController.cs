@@ -19,21 +19,33 @@ namespace ITMonopoly.Controllers
             _logger = logger;
         }
 
-        [HttpGet("/ws")]
-        public async Task Get()
+        [HttpGet("/gettoken")]
+        public ActionResult Getoken(string PlayerName)
         {
-          if (HttpContext.WebSockets.IsWebSocketRequest)
-          {
-              using var webSocket = await HttpContext.WebSockets.AcceptWebSocketAsync();
-              _logger.Log(LogLevel.Information, "WebSocket connection established");
-              await Echo(webSocket);
-          }
-          else
-          {
-              HttpContext.Response.StatusCode = 400;
-          }
+               HttpContext.Request.ContentType = "";
+
+              MonopolModel monopolModel = new MonopolModel(null, _logger);
+              return Ok(monopolModel.GetToken(PlayerName));
+
         }
-        
+
+        [HttpGet("/ws")]
+        public async Task<string> Get(string Token)
+        {
+            if (HttpContext.WebSockets.IsWebSocketRequest)
+            {
+                using var webSocket = await HttpContext.WebSockets.AcceptWebSocketAsync();
+                _logger.Log(LogLevel.Information, "WebSocket connection established");
+                MonopolModel monopolModel = new MonopolModel(webSocket, _logger);
+                return await monopolModel.GetToken(Token);
+            }
+            else
+            {
+                HttpContext.Response.StatusCode = 400;
+                return "";
+            }
+        }
+
         private async Task Echo(WebSocket webSocket)
         {
             var buffer = new byte[1024 * 4];

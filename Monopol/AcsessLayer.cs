@@ -11,7 +11,6 @@ namespace ITMonopoly
 
     public class AcsessLayer
     {
-
         public static DataSet Exec(string ProcedureName, SqlParameterCollection sqlParameters)
         {
             var dataset = new DataSet();
@@ -34,7 +33,7 @@ namespace ITMonopoly
             using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
             {
                 connection.Open();
-                using (SqlCommand command = new SqlCommand(@"SELECT [FullName],[experiance_nYears] FROM [dbo].[t_Doctor]", connection))
+                using (SqlCommand command = new SqlCommand(String.Format("SELECT [CurrentUser],Token FROM [dbo].[viw_Monopol_SessionsPlayersCurrentUser] ORDER BY Updated", connection))
                 {
                     command.Notification = null;
                     SqlDependency dependency = new SqlDependency(command);

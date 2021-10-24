@@ -47,7 +47,7 @@ namespace ITMonopoly
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebSocketMonopol v1"));
             }
             SqlDependency.Start(UserSession.ConnectionString);
-            UserSession.Init();
+            //UserSession.Init();
             app.UseHttpsRedirection();
             
             // Plug-in WebSockets middleware
