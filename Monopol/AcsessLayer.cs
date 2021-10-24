@@ -30,10 +30,10 @@ namespace ITMonopoly
         }
         protected void SetupNotifier()
         {
-            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString))
+            using (var connection = new SqlConnection(UserSession.ConnectionString))
             {
                 connection.Open();
-                using (SqlCommand command = new SqlCommand(String.Format("SELECT [CurrentUser],Token FROM [dbo].[viw_Monopol_SessionsPlayersCurrentUser] ORDER BY Updated", connection))
+                using (SqlCommand command = new SqlCommand(String.Format("SELECT [CurrentUser],Token FROM [dbo].[viw_Monopol_SessionsPlayersCurrentUser] ORDER BY Updated"), connection))
                 {
                     command.Notification = null;
                     SqlDependency dependency = new SqlDependency(command);
