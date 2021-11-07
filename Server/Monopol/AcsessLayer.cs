@@ -28,7 +28,7 @@ namespace ITMonopoly
          
             return dataset;
         }
-        protected void SetupNotifier()
+        public void SetupNotifier()
         {
             using (var connection = new SqlConnection(UserSession.ConnectionString))
             {
