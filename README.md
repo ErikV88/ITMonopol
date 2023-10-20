@@ -5,24 +5,21 @@ Dette prosjektet er en implementering av et monopol-lignende IT-basert spill, ut
 ## Installasjon
 
 1. Klon dette repositoriet ved å kjøre følgende kommando i terminalen
-   ''
+``
    git clone https://github.com/eriksv88/ITMonopol.git
-   ''
+``
 2. Gå inn i den klonede mappen ved å skrive:
-''cd ITMonopol
+ 
+``
+cd ITMonopol
+``
+4. Installer avhengigheter ved hjelp av:
 
-''
-3. Installer avhengigheter ved hjelp av:
-''
+``
 npm install
 ''
 
 Følg instruksjonene på skjermen for å spille spillet.
-
-
-## Lisens
-
-Dette prosjektet er lisensiert under MIT Lisensen - se [LISENS](LISENS) filen for detaljer.
 
 ## Demo
 
