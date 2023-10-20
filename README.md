@@ -26,4 +26,4 @@ Dette prosjektet er lisensiert under MIT Lisensen - se [LISENS](LISENS) filen fo
 
 ## Demo
 
-Se en demo av prosjektet [her]([https://www.youtube.com/DIN_YOUTUBE_VIDEO](https://www.youtube.com/watch?v=QGOzuD9I8Y4)https://www.youtube.com/watch?v=QGOzuD9I8Y4)
+Se en demo av prosjektet https://www.youtube.com/watch?v=QGOzuD9I8Y4)https://www.youtube.com/watch?v=QGOzuD9I8Y4
