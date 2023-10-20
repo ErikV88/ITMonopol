@@ -18,10 +18,8 @@ cd ITMonopol
 ``
 
 
-4. Installer avhengigheter ved hjelp av:
-``
-npm install
-``
+4. Installer avhengigheter ved nuget. Og opprett en SQL Database for lagning av user state:
+
 
 Følg instruksjonene på skjermen for å spille spillet.
 
