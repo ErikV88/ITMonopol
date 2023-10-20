@@ -19,7 +19,7 @@ cd ITMonopol
 
 ``
 npm install
-''
+``
 
 Følg instruksjonene på skjermen for å spille spillet.
 
