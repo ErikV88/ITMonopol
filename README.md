@@ -13,6 +13,8 @@ Dette prosjektet er en implementering av et monopol-lignende IT-basert spill, ut
 ``
 cd ITMonopol
 ``
+
+
 4. Installer avhengigheter ved hjelp av:
 
 ``
