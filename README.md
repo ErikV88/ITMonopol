@@ -1,6 +1,7 @@
 # ITMonopol
 
 Dette prosjektet er en implementering av et monopol-lignende IT-basert spill, utviklet som en del av batcheloren ved Universitetet i Bergen i INFO212.
+Spillet er i hovedsak laget i javscript, med largning av user state med C# og SQL Server.
 
 ## Installasjon
 
