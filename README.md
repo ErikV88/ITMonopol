@@ -10,14 +10,12 @@ Spillet er i hovedsak laget i javscript, med largning av user state med C# og SQ
    git clone https://github.com/eriksv88/ITMonopol.git
 ``
 2. Gå inn i den klonede mappen ved å skrive:
- 
 ``
 cd ITMonopol
 ``
 
 
 4. Installer avhengigheter ved hjelp av:
-
 ``
 npm install
 ``
