@@ -3,6 +3,9 @@
 Dette prosjektet er en implementering av et monopol-lignende IT-basert spill, utviklet som en del av batcheloren ved Universitetet i Bergen i INFO212.
 Spillet er i hovedsak laget i javscript, med largning av user state med C# og SQL Server.
 
+![ALT TEXT](Skjermbilde 2023-10-20 145808.png)
+
+
 ## Installasjon
 
 1. Klon dette repositoriet ved å kjøre følgende kommando i terminalen
