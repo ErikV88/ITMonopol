@@ -1,6 +1,6 @@
 # ITMonopol
 
-Dette prosjektet er en implementering av et monopol-lignende IT-basert spill, utviklet som en del av batcheloren ved Universitetet i Bergen.
+Dette prosjektet er en implementering av et monopol-lignende IT-basert spill, utviklet som en del av batcheloren ved Universitetet i Bergen i INFO212.
 
 ## Installasjon
 
