@@ -26,4 +26,4 @@ Følg instruksjonene på skjermen for å spille spillet.
 
 ## Demo
 
-Se en demo av prosjektet https://www.youtube.com/watch?v=QGOzuD9I8Y4)https://www.youtube.com/watch?v=QGOzuD9I8Y4
+Se en demo av prosjektet https://www.youtube.com/watch?v=QGOzuD9I8Y4
